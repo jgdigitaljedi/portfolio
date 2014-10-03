@@ -1,0 +1,11 @@
+.social-menu-off {
+	display: none;
+}
+
+.me {
+	border-radius: 15px;
+}
+
+.social-boxed {
+	border: 2px solid white;
+}
