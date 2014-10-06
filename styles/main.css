@@ -9,3 +9,7 @@
 .social-boxed {
 	border: 2px solid white;
 }
+
+#message {
+	width: 100%;
+}

@@ -58,42 +58,29 @@
     </div>
 
     <div class="content">
-         <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+        <h2 class="content-head is-center">Drop Me a Line</h2>
 
-         <!-- <div class="pure-g">
-             <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                 <form class="pure-form pure-form-stacked">
-                     <fieldset>
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked" action="mailer.php" method="post">
+                    <p class="is-center">Learning PHP config for nginx so temporarily out of order!</p>
+                    <p class="is-center">Please feel free to email me at digitaljedi@outlook.com</p>
+                    <fieldset>
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
 
-                         <label for="name">Your Name</label>
-                         <input id="name" type="text" placeholder="Your Name">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" placeholder="Why are you contacting me?">
 
-
-                         <label for="email">Your Email</label>
-                         <input id="email" type="email" placeholder="Your Email">
-
-                         <label for="subject">Subject</label>
-                         <input id="subject" type="text" placeholder="Why are you contacting me?">
-
-                         <label for="message">Message</label>
-                         <input id="message" type="text" placeholder="What would you like to say?">
-
-                         <button type="submit" class="pure-button">Send</button>
-                     </fieldset>
+                        <label for="message">Message</label>
+                        <textarea rows="5" id="message" name="message" type="text" placeholder="What would you like to say?"></textarea></p>
+                        <input class="pure-button" type="submit" value="Send">
+                    </fieldset>
                  </form>
-             </div> -->
-
-             <form class="email" action="mailer.php" method="post">
-             <p>Name:</p>
-             <input type="text" name="name" />
-             <p>E-mail:</p>
-             <input type="text" name="email" />
-             <p>Subject:</p>
-             <input type="text" name="subject" />
-             <p>Message:</p>
-             <textarea name="message"></textarea></p>
-             <input class="send" type="submit" value="Send">
-             </form>
+            </div>
+        </div>
 
 
     <script type="text/javascript" src="../scripts/landing.js"></script>
