@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Joey Gauthier</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../bower_components/pure/pure.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+        <!--[if lte IE 8]>
+          
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive-old-ie.css">
+          
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+          
+            <link rel="stylesheet" href="../bower_components/pure/grids-responsive-min.css">
+            <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+          
+        <!--<![endif]-->
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="../styles/marketing.css">
+        <!--<![endif]-->
+          
+    </head>
+    <body>
+
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading" href="">Portfolio</a>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li class="pure-menu-selected"><a href="#">Contact</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a id="social-link" href="#">Social</a></li>
+
+
+            </ul>
+            <div class="pure-menu pure-menu-open pure-menu-horizontal social-menu social-menu-off">
+                <a href="#" class="pure-menu-heading">Find Me On...</a>
+
+                <ul>
+                    <li><a href="http://www.linkedin.com/in/paulgauthier81/"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                    <li><a href="http://www.twitter.com/jgdigitaljedi"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                    <li><a href="https://plus.google.com/+JoeyGauthier/posts"><i class="fa fa-google-plus-square"></i> G+</a></li>
+                    <li><a href="https://www.facebook.com/joey.gauthier"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                    <li><a href="https://github.com/jgdigitaljedi"><i class="fa fa-github-square"></i> GitHub</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="content">
+         <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+         <!-- <div class="pure-g">
+             <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                 <form class="pure-form pure-form-stacked">
+                     <fieldset>
+
+                         <label for="name">Your Name</label>
+                         <input id="name" type="text" placeholder="Your Name">
+
+
+                         <label for="email">Your Email</label>
+                         <input id="email" type="email" placeholder="Your Email">
+
+                         <label for="subject">Subject</label>
+                         <input id="subject" type="text" placeholder="Why are you contacting me?">
+
+                         <label for="message">Message</label>
+                         <input id="message" type="text" placeholder="What would you like to say?">
+
+                         <button type="submit" class="pure-button">Send</button>
+                     </fieldset>
+                 </form>
+             </div> -->
+
+             <form class="email" action="mailer.php" method="post">
+             <p>Name:</p>
+             <input type="text" name="name" />
+             <p>E-mail:</p>
+             <input type="text" name="email" />
+             <p>Subject:</p>
+             <input type="text" name="subject" />
+             <p>Message:</p>
+             <textarea name="message"></textarea></p>
+             <input class="send" type="submit" value="Send">
+             </form>
+
+
+    <script type="text/javascript" src="../scripts/landing.js"></script>
+
+    </body>

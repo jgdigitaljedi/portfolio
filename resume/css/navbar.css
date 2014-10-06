@@ -1,0 +1,281 @@
+/*.pure-menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+*/
+.pure-menu.pure-menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+/*.pure-menu ul {
+    left: -10000px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: -10000px;
+    z-index: 1;
+}*/
+
+/*.pure-menu > ul { position: relative; }*/
+
+/*.pure-menu-open > ul {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.pure-menu-open > ul:focus {
+    outline: 0;
+}
+
+.pure-menu li { position: relative; }
+*/
+.pure-menu a,
+.pure-menu .pure-menu-heading {
+    display: block;
+    color: inherit;
+    line-height: 1.5em;
+    padding: 5px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/*.pure-menu.pure-menu-horizontal > .pure-menu-heading {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}*/
+.pure-menu.pure-menu-horizontal > ul {
+    display: inline-block;
+    *display: inline;
+    float: right;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+/*.pure-menu li a { padding: 5px 20px; }*/
+
+/*.pure-menu-can-have-children > .pure-menu-label:after {
+    content: '\25B8';*//*
+    float: right;*/
+    /* These specific fonts have the Unicode char we need. */
+    /*font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;*/
+/*    margin-right: -20px;
+    margin-top: -1px;
+}*/
+
+/*.pure-menu-can-have-children > .pure-menu-label {
+    padding-right: 30px;
+}*/
+
+/*.pure-menu-separator {
+    background-color: #dfdfdf;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    margin: 7px 2px;
+    overflow: hidden;
+}*/
+
+/*.pure-menu-hidden {
+    display: none;
+}*/
+
+/* FIXED MENU */
+.pure-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* HORIZONTAL MENU CODE */
+
+/* Initial menus should be inline-block so that they are horizontal */
+.pure-menu-horizontal li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+/* Submenus should still be display: block; */
+.pure-menu-horizontal li li {
+    display: block;
+}
+
+/* Content after should be down arrow */
+/*.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
+    content: "\25BE";
+}*/
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+    padding-right: 30px;
+}
+
+/* Adjusting separator for vertical menus */
+/*.pure-menu-horizontal li.pure-menu-separator {
+	height: 50%;
+	width: 1px;
+	margin: 0 7px;
+}*/
+
+/* Submenus should be horizontal separator again */
+/*.pure-menu-horizontal li li.pure-menu-separator {
+	height: 1px;
+	width: auto;
+	margin: 7px 2px;
+}*/
+
+
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/* MAIN MENU STYLING */
+
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    /*background: #fff;  Old browsers */
+    /*border: 1px solid #b7b7b7;*/
+}
+
+/* remove borders for horizontal menus */
+.pure-menu.pure-menu-horizontal,
+.pure-menu.pure-menu-horizontal .pure-menu-heading {
+    border: none;
+}
+
+
+/* LINK STYLES */
+
+.pure-menu a {
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-right: 20px;
+
+}
+
+/*.pure-menu a,
+.pure-menu .pure-menu-can-have-children > li:after {
+    color: #777;
+}*/
+
+.pure-menu .pure-menu-can-have-children > li:hover:after {
+    color: #fff;
+}
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+.pure-menu .pure-menu-open {
+    background: #2c3e50;
+}
+
+
+.pure-menu li a:hover,
+.pure-menu li a:focus {
+    /*background: #eee;*/
+}
+
+/* DISABLED STATES */
+.pure-menu li.pure-menu-disabled a:hover,
+.pure-menu li.pure-menu-disabled a:focus {
+    /*background: #fff;*/
+    color: #bfbfbf;
+}
+
+.pure-menu .pure-menu-disabled > a {
+    background-image: none;
+    border-color: transparent;
+    cursor: default;
+}
+
+.pure-menu .pure-menu-disabled > a,
+.pure-menu .pure-menu-can-have-children.pure-menu-disabled > a:after {
+    color: #bfbfbf;
+}
+
+/* HEADINGS */
+.pure-menu .pure-menu-heading {
+    color: #565d64;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-top: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #dfdfdf;
+}
+
+/* ACTIVE MENU ITEM */
+.pure-menu .pure-menu-selected a {
+    color: #000;
+}
+
+/* FIXED MENU */
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+}
+.home-menu.pure-menu-open {
+    background: #2c3e50;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.pure-menu.pure-menu-horizontal > .pure-menu-heading {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+.pure-menu.pure-menu-horizontal > ul {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 19px;
+    font-family: sans-serif;
+    text-align: left;
+}
