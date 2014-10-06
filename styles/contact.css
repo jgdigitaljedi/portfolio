@@ -1,0 +1,16 @@
+body {
+	background: url("../images/AustinSkyLine.png") no-repeat;
+	background-size: cover;
+
+}
+
+a {
+    color: #2980B9;
+}
+
+a:hover,
+a:focus {
+    background: none;
+    border: none;
+    color: #2C3E50;
+}
