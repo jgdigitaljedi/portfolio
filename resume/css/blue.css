@@ -162,7 +162,7 @@ a:hover {
 	float: left;
 	display: inline;
 	height: 510px;
-	background: #61B00C;
+	background: #27ae60;
 	margin-left: 25px;
 }
 
@@ -173,7 +173,7 @@ a:hover {
 }
 
 .projects-title {
-	color: #61B00C;
+	color: #27ae60;
 }
 
 .education-bg {
@@ -181,7 +181,7 @@ a:hover {
 	float: left;
 	display: inline;
 	height: 220px;
-	background: #0F53D1;
+	background: #2980b9;
 	margin-left: 25px;
 }
 
@@ -192,7 +192,7 @@ a:hover {
 }
 
 .education-title {
-	color: #0F53D1;
+	color: #2980b9;
 	font-weight: bold;
 }
 
@@ -217,7 +217,7 @@ a:hover {
 	float: left;
 	display: inline;
 	height: 267px;
-	background: #7D0FD1;
+	background: #9b59b6;
 	margin-left: 25px;
 }
 
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .experience-title {
-	color: #7D0FD1;
+	color: #9b59b6;
 	font-weight: bold;
 }
 
@@ -237,7 +237,7 @@ a:hover {
 	float: left;
 	display: inline;
 	height: 255px;
-	background: #D10F29;
+	background: #c0392b;
 	margin-left: 25px;
 }
 
@@ -248,7 +248,7 @@ a:hover {
 }
 
 .skill {
-	color: #D10F29;
+	color: #c0392b;
 	font-weight: bold;
 }
 
@@ -257,7 +257,7 @@ a:hover {
 	float: left;
 	display: inline;
 	height: 215px;
-	background: #000000;
+	background: #2c3e50;
 	margin-left: 25px;
 }
 
@@ -1091,6 +1091,9 @@ summary {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 17px;
 }
 .home-menu.pure-menu-open {
     background: #2c3e50;
