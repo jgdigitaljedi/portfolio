@@ -2,4 +2,5 @@
 		e.preventDefault();
 		$(".social-menu").slideToggle("slow");
 		$(".social-menu").toggleClass("social-menu-off");
+		$("#caret").toggleClass("rotated");
 	});
