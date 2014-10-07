@@ -2,5 +2,7 @@
 		e.preventDefault();
 		$(".social-menu").slideToggle("slow");
 		$(".social-menu").toggleClass("social-menu-off");
-		$("#caret").toggleClass("rotated");
+		setTimeout(function() {
+			$("#caret").toggleClass("rotated");
+		}, 500 );
 	});
