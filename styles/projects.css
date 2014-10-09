@@ -4,3 +4,9 @@ body {
 	background-size: cover;
 
 }
+
+.broken {
+	font-weight: bold;
+	color: white;
+	margin-top: 10%;
+}
