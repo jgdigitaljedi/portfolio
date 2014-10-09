@@ -1,5 +1,5 @@
 body {
-	background: url("../images/AustinSkyLine.png") no-repeat;
+	background: url("../images/AustinSkyLine.png") no-repeat center center fixed;
 	background-size: cover;
 
 }
