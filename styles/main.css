@@ -27,3 +27,12 @@
   -webkit-transform: rotate(180deg); /* Safari and Chrome */
   -o-transform: rotate(180deg); /* Opera */
 }
+
+html {
+	font-family: 'Cabin', sans-serif;
+}
+
+.pure-menu, .splash-head {
+	font-family: 'Lobster', cursive;
+	font-size: 1.2em;
+}
