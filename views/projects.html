@@ -9,10 +9,12 @@
         <link rel="stylesheet" href="../bower_components/pure/pure.css">
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/projects.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/jquery.jscrollpane.css">
+        <link rel="stylesheet" href="../styles/reset.css">
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.10/slick.css"/>
         
         <!--[if lte IE 8]>
           
@@ -64,23 +66,145 @@
     
     <div class="pure-g">
         <div class="pure-u-1 pure-u-md-1-5"></div>
+
         <div class="pure-u-1 pure-u-md-3-5">
-            <div class="projects-slider">
-    <h1 class="broken">STILL UNDER CONTRUCTION!! PLEASE BE PATIENT AS I CONTINUE DEVELOPMENT ON THIS PAGE</h1>
-            <!--   <div id="my-dash">your content</div>
-              <div id="lassos">your content</div>
-              <div id="roulette">your content</div>
-              <div id="quizzy">your content</div> -->
-            </div>
+        <h1 class="broken">My Projects</h1>
+            <div id="ca-container" class="ca-container">
+                <div class="ca-wrapper">
+                    <div class="ca-item ca-item-1">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>My Dash</h3>
+                            <h4>
+                                <span class="ca-quote">“</span>
+                                <span>Dashboard that centralizes all the data you need to keep organized.</span>
+                            </h4>
+                                <a href="#" class="ca-more">more...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>My Dash</h6>
+                                <a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>Get randomized restaurant and bar suggestions, view weather info and radar, track packages, view phone notifications, and control your HomeJS devices all from one screen! Project was built on AngularJS using the following APIs: FourSquare, WeatherUnderground, Openweathermap, Boxoh, Pushbullet, HomeJS, Firebase, and Google Maps. <b>I have not launched this app because I want to rebuild on a MEAN stack as a way to teach myself more about NodeJS. </b></p>
+                                </div>
+                                <ul>
+                                    <li><a href="https://github.com/jgdigitaljedi/dashboard" target="_blank">View on GitHub</a></li>
+                                    <li><a href="#">View more images</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-2">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>TX Lassos Alumni Connect</h3>
+                            <h4>
+                                <span class="ca-quote">“</span>
+                                <span>Privatized social network for TX Lassos Alums with advanced admin features.</span>
+                            </h4>
+                                <a href="#" class="ca-more">more...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>TX Lassos Alumni Connect</h6>
+                                <a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>This application was built by request for the Texas Lassos Alumni Group. I worked on a team with two other development students to create a privatized social network for the Alumni group. The application has a table for alums and a table for alums who have joined the social network. Upon signing up, the app notifies the admins that someone is pending approval, notifies the user they must wait for approval, and looks for the user information in the alum table to see if it can move it to the active user table but still keep inactive. After approval the user is notified to log in and can fill out their profile, search for other alums, and more. Admins can import new alums via Excel sheet and export the whole database to an Excel sheet as well. This was a pure Ruby on Rails app with Devise and Roo gems.</p>
+                                </div>
+                                <ul>
+                                    <li><a href="https://github.com/jgdigitaljedi/tx-lassos" target="_blank">View on GitHub</a></li>
+                                    <li><a href="#">View more images</a></li>
+                                    <li><a href="http://connect.lassoalumni.org/users/sign_in">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-3">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>Restaurant Roulette</h3>
+                            <h4>
+                                <span class="ca-quote">“</span>
+                                <span>Can't decide where to eat? This app decides for you!</span>
+                            </h4>
+                                <a href="#" class="ca-more">more...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>Restaurant Roulette</h6>
+                                <a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>Get randomized restaurant and bar suggestions, view weather info and radar, track packages, view phone notifications, and control your HomeJS devices all from one screen!</p>
+                                </div>
+                                <ul>
+                                    <li><a href="https://github.com/jgdigitaljedi/hackday/tree/gh-pages" target="_blank">View on GitHub</a></li>
+                                    <li><a href="#">View more images</a></li>
+                                    <li><a href="http://development.restaurant-roulette.divshot.io" target="_blank">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-4">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>Quizzy</h3>
+                            <h4>
+                                <span class="ca-quote">“</span>
+                                <span>A dynamically generated quiz game.</span>
+                            </h4>
+                                <a href="#" class="ca-more">more...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>Quizzy</h6>
+                                <a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>Quizzy was a MakerSquare project that used Underscore.JS templating to dynamically create quiz games much like you would see on BuzzFeed. After creating our own quiz for the game by making a JSON object that was read by the templating system which generated the html, we continued on to make it possible for users to create their own custom quizes as well. Although we did not finish the project, I felt that the Underscore templating lessons I learned made this project valuable enough to list here. You can view the source on my GitHub.</p>
+                                </div>
+                                <ul>
+                                    <li><a href="https://github.com/jgdigitaljedi/quizzy" target="_blank">View on GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ca-item ca-item-5">
+                        <div class="ca-item-main">
+                            <div class="ca-icon"></div>
+                            <h3>My Toolbox</h3>
+                            <h4>
+                                <span class="ca-quote">“</span>
+                                <span>The Swiss Army Knife for desktop technicians.</span>
+                            </h4>
+                                <a href="#" class="ca-more">more...</a>
+                        </div>
+                        <div class="ca-content-wrapper">
+                            <div class="ca-content">
+                                <h6>My Toolbox</h6>
+                                <a href="#" class="ca-close">close</a>
+                                <div class="ca-content-text">
+                                    <p>After writing a countless number of vbscripts and batch files to perform remote and batch tasks, I finally decided to write an HTA to give the script collection a GUI and make it easier for anyone to use my scripts. Although a lot of features had to be removed prior to posting to GitHub because they contained server addresses or were for very client specific tasks, the project is still huge and loaded with functionality. I used vbscript, JavaScript, HTML, and CSS to generate an HTA that has many external vbscript and batch file dependencies. This is a Windows desktop app made to function inside a Windows network.</p>
+                                </div>
+                                <ul>
+                                    <li><a href="https://github.com/jgdigitaljedi/myToolBox" target="_blank">View on GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ca-wrapper -->
+            </div><!-- ca-container -->
+
         </div>
+
         <div class="pure-u-1 pure-u-md-1-5"></div>
+
     </div>
 
 
-
-
     <script type="text/javascript" src="../scripts/landing.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.10/slick.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.contentcarousel.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="../scripts/slider.js"></script>
     </body>
 </html>

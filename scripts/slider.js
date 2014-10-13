@@ -1,34 +1,15 @@
 $(document).ready(function(){
-	$(".projects-slider").slick({
-	  dots: true,
-	  infinite: false,
-	  speed: 300,
-	  slidesToShow: 4,
-	  slidesToScroll: 4,
-	  responsive: [
-	    {
-	      breakpoint: 1024,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 3,
-	        infinite: true,
-	        dots: true
-	      }
-	    },
-	    {
-	      breakpoint: 600,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 2
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    }
-	  ]
+	$('#ca-container').contentcarousel({
+	    // speed for the sliding animation
+	    sliderSpeed     : 500,
+	    // easing for the sliding animation
+	    sliderEasing    : 'easeOutExpo',
+	    // speed for the item animation (open / close)
+	    itemSpeed       : 500,
+	    // easing for the item animation (open / close)
+	    itemEasing      : 'easeOutExpo',
+	    // number of items to scroll at a time
+	    scroll          : 1
 	});
+			
 });
