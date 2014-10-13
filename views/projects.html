@@ -12,8 +12,10 @@
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/jquery.jscrollpane.css">
         <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/lightview.css">
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         
         <!--[if lte IE 8]>
@@ -90,7 +92,7 @@
                                 </div>
                                 <ul>
                                     <li><a href="https://github.com/jgdigitaljedi/dashboard" target="_blank">View on GitHub</a></li>
-                                    <li><a href="#">View more images</a></li>
+                                    <li><a data-lightview-title="My Dash" class="lightview map-link">View more images</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -110,11 +112,11 @@
                                 <h6>TX Lassos Alumni Connect</h6>
                                 <a href="#" class="ca-close">close</a>
                                 <div class="ca-content-text">
-                                    <p>This application was built by request for the Texas Lassos Alumni Group. I worked on a team with two other development students to create a privatized social network for the Alumni group. The application has a table for alums and a table for alums who have joined the social network. Upon signing up, the app notifies the admins that someone is pending approval, notifies the user they must wait for approval, and looks for the user information in the alum table to see if it can move it to the active user table but still keep inactive. After approval the user is notified to log in and can fill out their profile, search for other alums, and more. Admins can import new alums via Excel sheet and export the whole database to an Excel sheet as well. This was a pure Ruby on Rails app with Devise and Roo gems.</p>
+                                    <p>This application was built by request for the Texas Lassos Alumni Group. I worked on a team with two other development students to create a privatized social network for this Alumni group. The application has a table for alums and a table for alums who have joined the social network. Upon signing up, the app notifies the admins that someone is pending approval, notifies the user they must wait for approval, and looks for the user information in the alum table to see if it can move it to the active user table but still keep them inactive. After approval the user is notified to log in and can fill out their profile, search for other alums, and more. Admins can import new alums via Excel sheet and export the whole database to an Excel sheet as well. This was a Ruby on Rails app with Devise and Roo gems and a little bit of jQuery.</p>
                                 </div>
                                 <ul>
                                     <li><a href="https://github.com/jgdigitaljedi/tx-lassos" target="_blank">View on GitHub</a></li>
-                                    <li><a href="#">View more images</a></li>
+                                    <li><a data-lightview-title="Lassos Connect" class="lightview map-link">View more images</a></li>
                                     <li><a href="http://connect.lassoalumni.org/users/sign_in">Link</a></li>
                                 </ul>
                             </div>
@@ -135,13 +137,51 @@
                                 <h6>Restaurant Roulette</h6>
                                 <a href="#" class="ca-close">close</a>
                                 <div class="ca-content-text">
-                                    <p>Get randomized restaurant and bar suggestions, view weather info and radar, track packages, view phone notifications, and control your HomeJS devices all from one screen!</p>
+                                    <p>This app was done in 2 days and AngularJS was used merely to force myself to learn it on the fly. It geolocates you via IP address, gets a list of 30 restaurants near you via the FourSquare API, then randomly selects 2 choices for you providing you with a website link and Google map for each one.</p>
                                 </div>
                                 <ul>
                                     <li><a href="https://github.com/jgdigitaljedi/hackday/tree/gh-pages" target="_blank">View on GitHub</a></li>
-                                    <li><a href="#">View more images</a></li>
                                     <li><a href="http://development.restaurant-roulette.divshot.io" target="_blank">Link</a></li>
+                                    <li>
+                                        <a href="../images/rr/rr-gallery-1.png"
+                                           class="lightview"
+                                           data-lightview-title="Restaurants Roulette"
+                                           data-lightview-caption="Landing page"
+                                           data-lightview-group="rr">View Images
+                                        </a>
+                                    </li>
                                 </ul>
+                                
+                                <a href="../images/rr/rr-gallery-2.png"
+                                   class="lightview"
+                                   data-lightview-title="Restaurants Roulette"
+                                   data-lightview-caption="Results page"
+                                   data-lightview-group="rr">
+                                </a>
+                                <a href="../images/rr/rr-gallery-3.png"
+                                   class="lightview"
+                                   data-lightview-title="Restaurants Roulette"
+                                   data-lightview-caption="Map for chosen result"
+                                   data-lightview-group="rr">
+                                </a>
+                                <a href="../images/rr/rr-gallery-4.png"
+                                   class="lightview"
+                                   data-lightview-title="Restaurants Roulette"
+                                   data-lightview-caption="Results filtering by food type"
+                                   data-lightview-group="rr">
+                                </a>
+                                <a href="../images/rr/rr-gallery-5.png"
+                                   class="lightview"
+                                   data-lightview-title="Restaurants Roulette"
+                                   data-lightview-caption="Responsive landing page view"
+                                   data-lightview-group="rr">
+                                </a>
+                                <a href="../images/rr/rr-gallery-6.png"
+                                   class="lightview"
+                                   data-lightview-title="Restaurants Roulette"
+                                   data-lightview-caption="Responsive results page view"
+                                   data-lightview-group="rr">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -206,5 +246,8 @@
     <script type="text/javascript" src="../scripts/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="../scripts/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="../scripts/slider.js"></script>
+    <script type="text/javascript" src="../scripts/lightview.js"></script>
+    <script type="text/javascript" src="../scripts/spinners.min.js"></script>
+    <script type="text/javascript" src="../scripts/excanvas.js"></script>
     </body>
 </html>
