@@ -12,3 +12,43 @@ body {
 	font-size: 2.5em;
 	font-family: 'Lobster', cursive;
 }
+
+@media screen and (min-width: 490px) and (max-width: 1286px) {
+
+	body {
+		background: url("../images/AustinNight.png") no-repeat;
+		background-attachment:fixed;
+		background-position:center bottom;
+	}
+
+	.broken {
+		margin-top: 40px;
+	}
+
+  	.pure-u-md-1-5 {
+  		display: none;
+		width: 0px;
+  	}
+
+  	.pure-u-md-3-5 { 
+  		width: 100%;
+  		margin-top: 30px;
+  		left: 0;
+  	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 489px) {
+	.broken {
+		margin-top: 100px;
+	}
+
+  	.pure-u-md-1-5 {
+  		display: none;
+		width: 0px;
+  	}
+
+  	.pure-u-md-3-5 { 
+  		width: 100%;
+  		margin-top: 30px;
+  	}
+}
